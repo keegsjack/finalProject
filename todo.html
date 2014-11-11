@@ -1,0 +1,24 @@
+
+
+
+<div class='row'>
+
+
+<div class='list-left col-mid-6'>
+	<h3>This is To Do Shiz</h3>
+	<input type='text' placeholder='input something dude' ng-model='newThing'></input> <button ng-click='addTodo()'>Click it</button>
+  <div class='box'ng-repeat='thing in todo'>- {{thing}}
+    <div class='delete_btn'>X</div>
+    <span class='done' ng-click='doneTodo(arr, $index)'>done<span>
+  </div> 
+
+</div>
+ 
+<div class='list-right col-mid-6'>
+  <h3>This what I've done</h3>
+  
+  <div ng-repeat='thing in doneTodo'>{{thing}}</div>
+
+
+</div>
+
